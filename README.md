@@ -9,9 +9,8 @@
 
 📫 How to reach me:
 
-    Email: enki420@example.com
-    LinkedIn: [Your LinkedIn Profile]
-    Twitter: [Your Twitter Handle]
+    Email: Devin@agiledefensesystems.com
+    
 
 😄 Pronouns: He/Him
 
