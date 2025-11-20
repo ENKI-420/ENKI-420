@@ -62,7 +62,8 @@ My work merges **biological evolution**, **adaptive AI**, and **quantum-coherent
 | System | Domain | Status |
 |--------|--------|--------|
 | **[AURA](https://github.com/ENKI-420/aura)** ⭐ | Recursive multi-agent coding intelligence | **Production** |
-| **Quantum Fold Display** | Foldable quantum visualization | **Production** ⭐ |
+| **[AURA CLI](https://github.com/ENKI-420/aura-cli)** | Multi-agent swarm orchestrator with NLP2COMMAND | **v1.0.0** 🆕 |
+| **[Quantum Fold Display](https://github.com/ENKI-420/quantum-fold-display)** ⭐ | Foldable quantum visualization | **Production** |
 | **ADSTech** | Defense-ready multimodal AI ecosystem | Production |
 | **QuantumCoin** | Coherence-mining token architecture | Research |
 | **LegalAI** | Domain copilot for legal analysis | Production |
