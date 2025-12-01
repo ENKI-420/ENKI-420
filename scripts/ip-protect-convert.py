@@ -33,6 +33,24 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
+# Optional imports for PDF processing
+try:
+    from reportlab.lib.pagesizes import letter
+    from reportlab.pdfgen import canvas as reportlab_canvas
+    HAS_REPORTLAB = True
+except ImportError:
+    HAS_REPORTLAB = False
+    letter = None
+    reportlab_canvas = None
+
+try:
+    from PyPDF2 import PdfReader, PdfWriter
+    HAS_PYPDF2 = True
+except ImportError:
+    HAS_PYPDF2 = False
+    PdfReader = None
+    PdfWriter = None
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -341,25 +359,12 @@ def process_pdf(
     """Process a PDF file with watermarking."""
     log_info(f"Processing PDF: {input_path}")
 
-    # Check if reportlab is available for PDF generation
-    try:
-        from reportlab.lib.pagesizes import letter
-        from reportlab.pdfgen import canvas
-
-        HAS_REPORTLAB = True
-    except ImportError:
-        HAS_REPORTLAB = False
+    # Check if required libraries are available
+    if not HAS_REPORTLAB:
         log_error(
             "PDF watermarking requires 'reportlab' package. Install with: pip install reportlab"
         )
-
-    # Check if PyPDF2 is available for PDF manipulation
-    try:
-        from PyPDF2 import PdfReader, PdfWriter
-
-        HAS_PYPDF2 = True
-    except ImportError:
-        HAS_PYPDF2 = False
+    if not HAS_PYPDF2:
         log_error(
             "PDF watermarking requires 'PyPDF2' package. Install with: pip install PyPDF2"
         )
@@ -399,7 +404,7 @@ def process_pdf(
     import io
 
     watermark_buffer = io.BytesIO()
-    c = canvas.Canvas(watermark_buffer, pagesize=letter)
+    c = reportlab_canvas.Canvas(watermark_buffer, pagesize=letter)
     width, height = letter
 
     # Add watermark text

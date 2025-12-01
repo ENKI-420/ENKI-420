@@ -218,9 +218,10 @@ get_color() {
         rainbow)
             local rainbow_colors=("GREEN_BRIGHT" "PURPLE_BRIGHT" "GOLD_BRIGHT" "BLUE_BRIGHT" "CYAN_BRIGHT")
             local color_key="${rainbow_colors[$((RANDOM % ${#rainbow_colors[@]}))]}"
+            local base_color="${color_key%_BRIGHT}"  # Extract base color name (e.g., GREEN from GREEN_BRIGHT)
             colors_bright="${COLORS[$color_key]}"
-            colors_mid="${COLORS[${color_key/BRIGHT/}]:-${COLORS[$color_key]}}"
-            colors_dim="${COLORS[${color_key/BRIGHT/DIM}]:-${COLORS[$color_key]}}"
+            colors_mid="${COLORS[$base_color]:-${COLORS[$color_key]}}"
+            colors_dim="${COLORS[${base_color}_DIM]:-${COLORS[$color_key]}}"
             ;;
     esac
     
