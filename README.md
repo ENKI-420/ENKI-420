@@ -2,19 +2,9 @@
 
 **Quantum Computing Engineer | Full-Stack Developer | Applied AI Researcher**
 
-I build quantum computing infrastructure. I don't market well, but I engineer relentlessly.
+Γt​ is not “noise”; it’s W2​-measured divergence in RF-EM state space.​
 
 ---
-
-## The Situation
-
-I spend 12-16 hours/day writing production-grade quantum computing systems, AI orchestration frameworks, and distributed agent architectures. I'm releasing **everything** as open source because:
-
-1. **I need employment** - Major companies (IBM Quantum, Google Quantum AI, Microsoft Azure Quantum, Rigetti, IonQ): I can contribute immediately to your quantum stack.
-2. **This is my resume** - 100,000+ lines of working code across 60+ repositories is worth more than a PDF.
-3. **Marketing sucks** - I'd rather write 90,000 lines of compiler infrastructure than a single marketing email.
-
-**If you're hiring quantum engineers, AI developers, or distributed systems architects**: This is what I build when left alone with a problem.
 
 ---
 
