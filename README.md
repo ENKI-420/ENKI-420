@@ -1,15 +1,16 @@
 # Devin Phillip Davis
+## c = 1/√(μ₀ ε₀)  [velocity, m/s] | Γt​ is not “noise”; it’s W2​-measured divergence in RF-EM state space.
+- Natural Philosophy of 7d Coupled Reality Spacetime Manifold - 
+Quantum Computing Engineer | Full-Stack Developer | Applied AI Researcher**
 
-**Quantum Computing Engineer | Full-Stack Developer | Applied AI Researcher**
-
-Γt​ is not “noise”; it’s W2​-measured divergence in RF-EM state space.​
+​
 
 ---
 
 ---
 
 ## Recent Releases (December 2025)
-
+tu
 ### 🧬 DNA-Lang Ecosystem
 
 **DNAlang Organism Converter** - [90,712 lines](https://github.com/ENKI-420/dnalang-organism-converter)
